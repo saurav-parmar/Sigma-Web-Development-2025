@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Text & Color Properties</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+        
+        h1 {
+            font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: blue;
+            /* text-decoration-style: dashed; */
+            text-decoration-thickness: 7px;
+            text-indent: 60px;
+        }
+
+        p {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Baloo Bhai 2", serif;
+            font-size: 49px;
+            font-weight: 600;
+            color: red;
+            line-height: 1.4;
+            /* font-style: italic; */
+            /* font-weight: 500; */
+            /* text-decoration: underline; */
+        }
+
+        .lorem{
+            border: 2px solid red;
+            text-overflow: clip;
+            /* text-overflow: ellipsis; */
+            width: 450px;
+            word-break:break-all;
+            /* overflow: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>This is a Video on fonts.</p>
+        <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, dolor corporis totam excepturi laborum eos veniam consequuntur sapiente doloremque facilis, debitis numquam animi neque architecto. Quaerat sit quae labore totam ad animi? Repellat, impedit? Autem in adipisci iusto ex alias? Tempora nesciunt quas reiciendis veritatis?</p>
+    </div>
+</body>
+
+</html>
