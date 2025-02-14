@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % & more</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        
+        .container {
+            /* font-size: 18px; */
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            background-color:aquamarine
+        }
+        
+        .container > div{
+            border: 2px solid red;
+            width: 50%;
+            font-size: 2em;
+        }
+
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            width: 80vw;
+            /* background-color: rebeccapurple; */
+            color: rgb(20, 20, 19);
+            font-size: 22px;
+            /* width: 100vmin; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a Box.
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eos voluptatem velit cumque numquam qui
+            provident harum ab, in, autem adipisci praesentium pariatur. Ipsa veritatis, eaque ab perferendis iure
+            praesentium porro, beatae dicta, facilis commodi esse cum! Veniam quisquam optio quaerat doloribus est?
+            Commodi tempora velit corporis, fugiat assumenda alias deserunt, tempore dolorum odio, esse nam.
+
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, optio voluptatem reprehenderit porro vitae, officiis fugiat incidunt maiores earum consequuntur fuga tempore deleniti.</div>
+        </div>
+        dolorem omnis exercitationem veritatis culpa delectus sed quas esse, neque quidem dolorum accusantium perferendis soluta. Beatae voluptatibus explicabo nemo in? Molestiae commodi quae vitae architecto amet temporibus dolores inventore quas perferendis distinctio. Aperiam dicta numquam nulla perferendis, quod excepturi accusamus culpa quis? Rerum, esse, quos saepe molestiae asperiores fuga explicabo accusantium pariatur animi placeat recusandae eius voluptatum est praesentium dolorum alias mollitia fugit? Libero error sequi quidem fugiat, vero odio harum. Architecto voluptate assumenda, hic perspiciatis rerum repudiandae velit excepturi, cumque aspernatur mollitia, dolorum numquam commodi magnam! Ipsa ab officiis ipsum atque laudantium consequuntur vitae et quod enim, sint nemo minima perspiciatis ea aliquam incidunt rerum fuga quas praesentium repudiandae sapiente, laboriosam harum explicabo voluptatem. Assumenda doloremque tempora dignissimos, nobis inventore reiciendis illum non commodi quisquam cumque consectetur quibusdam at odit repellat et similique tempore quas? Nulla exercitationem beatae fugit, temporibus adipisci cupiditate veniam itaque culpa tempora, obcaecati blanditiis, atque dolore explicabo ex sit repudiandae aperiam repellat? Sit eum laboriosam sapiente architecto velit explicabo accusamus provident rem, nobis facilis pariatur doloribus ea rerum dolor eveniet voluptates nulla deleniti quae asperiores! Optio maiores nisi minima consectetur. Tempora nulla officia, error totam eveniet non est distinctio, eius rem iusto mollitia perspiciatis nobis repellat odio quis nam provident cumque amet, aut explicabo odit sit vel placeat? Officia minima sequi quas dolores tenetur eligendi iusto aliquam delectus omnis commodi. Possimus dolore hic quod aspernatur obcaecati distinctio consectetur ut dolorum, adipisci reiciendis totam voluptatem inventore recusandae provident facere nam ea autem voluptate iure sint? Magni, ipsa provident non placeat velit sunt nobis mollitia amet reprehenderit, eius vero nisi suscipit tempora. Dolore accusamus, suscipit assumenda tempore id asperiores soluta inventore sunt minima fugiat, error sed ullam delectus expedita explicabo incidunt deserunt! Nemo perspiciatis quam reprehenderit odit, illum debitis pariatur error tempora tenetur delectus magni saepe aliquid, aspernatur rem laudantium laborum deleniti. Doloribus, unde maxime? Similique cumque nulla reprehenderit voluptatibus praesentium qui, hic vitae, facilis soluta ex quae dolores nobis laboriosam alias iure, quisquam necessitatibus molestias esse tenetur saepe. Distinctio consequuntur aliquam labore molestias eaque magnam eveniet, commodi id ea sunt sint rerum odio ipsam laudantium voluptate quo voluptatibus exercitationem sed iure voluptatem beatae non saepe? Aliquam laboriosam quasi eveniet, nisi ipsum fugiat a quibusdam! Quod perspiciatis, repellat aliquam obcaecati provident rem recusandae quidem ea iste a, illum aperiam incidunt corrupti eligendi natus iusto facilis in voluptates magni, dolor sed? Rem dolores assumenda, facilis quis illum maiores labore minima mollitia itaque atque ad ducimus doloribus hic incidunt ullam. Ab fugit iusto cum ipsum repellendus aspernatur molestiae, modi mollitia sequi, officia, maiores incidunt eum quam? Commodi architecto possimus recusandae magnam repellendus, quidem cupiditate tenetur, tempora officiis enim harum libero quo animi, illo iste in nobis beatae ullam eaque consectetur nam. Dolorem facilis perferendis veritatis nemo neque sint eligendi id ullam iste sequi, totam rerum! Adipisci officiis eius ullam id nam sapiente fuga!
+    </div>
+    <div class="mycont">
+        This is another Container.
+    </div>
+</body>
+
+</html>
