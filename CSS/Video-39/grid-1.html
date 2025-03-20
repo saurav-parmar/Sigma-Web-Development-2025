@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Ultimate MasterClass</title>
+    <style>
+        .container{
+            border: 2px solid yellowgreen;
+            display: grid;
+            width: 80vw;
+            height: 100vh;
+
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: repeat(3, minmax(100px, 1fr)); */
+            grid-template-columns: repeat(3, 80px);
+
+            /* gap: 34px; */
+            row-gap: 10px;
+            column-gap: 44px;
+
+            /* justify-items: center; */
+            /* align-items: center; */
+
+            /* justify-content: center; */
+            /* align-content: center; */
+
+            place-content: center;
+
+            /* grid-template-columns: [Pehla]120px [Doosra] 110px [Teesra];
+            grid-template-rows: 100px 100px 100px; */
+        }
+
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        
+        .item-1{
+            align-self: self-start;
+            /* grid-row: 1/2; */
+            /* grid-column: 1/2; */
+            /* or you can do */
+            /* grid-row-start: 1;
+            grid-row-end: 2; */
+        }
+        
+        .item-4{
+            justify-self: end;
+            /* grid-row: 1/2; */
+            /* grid-column: 1/2; */
+            /* grid-column: Doosra/Teesra; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
