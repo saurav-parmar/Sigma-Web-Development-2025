@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        /* img{
+            filter: blur(3px);
+        } */
+
+        .img-1{
+            /* filter: brightness(122%) contrast(74%); */
+            filter: drop-shadow(16px 16px 20px red) invert(75%);
+        }
+
+        .img-2{
+            /* filter: invert(0.31); */
+            filter: opacity(0.5);
+        }
+
+        .img-3{
+            /* filter: grayscale(100%); */
+            filter: sepia(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img-1" height="500" width="500" src="https://images.unsplash.com/photo-1455894127589-22f75500213a?q=80&w=1387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        <img class="img-2" src="https://c.ndtvimg.com/2023-09/154fgjlg_shah-rukh-khan-_625x300_23_September_23.jpg?downsize=773:435" alt="">
+
+        <img class="img-3" src="https://filmfare.wwmindia.com/content/2018/feb/thu_1518686582.jpg" alt="">
+    </div>
+</body>
+</html>
