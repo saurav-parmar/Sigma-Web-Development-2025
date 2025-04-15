@@ -1,4 +1,4 @@
-console.log("Hello i am conditional tutorial");
+console.log("JavaScript Conditionals: if, else if, else ladder");
 
 // let age = 32; // let is Block scope variable
 // let age = 12;
