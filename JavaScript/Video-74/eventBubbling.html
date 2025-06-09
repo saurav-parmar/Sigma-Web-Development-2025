@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            margin: 14px;
+            padding: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: aquamarine;
+            margin: 14px;
+            padding: 14px;
+        }
+
+        .container {
+            background-color: lightcoral;
+            margin: 14px;
+            padding: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child element.
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelector('.child').addEventListener('click', function (e) {
+            // e.stopPropagation(); // Prevents the event from bubbling up to parent elements
+            alert('Child was clicked!');
+        });
+
+        document.querySelector('.childContainer').addEventListener('click', function (e) {
+            e.stopPropagation(); // Prevents the event from bubbling up to parent elements
+            alert('childContainer was clicked!');
+        });
+
+        document.querySelector('.container').addEventListener('click', function (e) {
+            e.stopPropagation(); // Prevents the event from bubbling up to parent elements
+            alert('container was clicked!');
+        });
+
+
+        function getrandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`;
+        }
+        // change the background color every second. setInterval will stop through clearInterval
+        // setInterval(() => {
+        //     document.querySelector('.childContainer').style.background = getrandomColor();
+        // }, 1000);
+
+        // change the background color after 1 second for one time only. setTimeout will stop automatically and not need to clearTimeout
+        let a = setTimeout(() => {
+            document.querySelector('.childContainer').style.background = getrandomColor();
+        }, 1000);
+        console.log(a);
+    </script>
+</body>
+
+</html>
