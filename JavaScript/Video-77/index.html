@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercise 13 - Solution & Shoutouts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid black; */
+            width: 900px;
+            padding: 8px;
+            margin: 5px;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .image .capsule {
+            position: absolute;
+            bottom: 10px;
+            right: 5px;
+            z-index: 10;
+            background-color: #242020;
+            color: #fff;
+            opacity: 0.9;
+            padding: 3px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        .image img {
+            border-radius: 10px;
+            width: 280px;
+        }
+
+        .text h1,
+        p {
+            /* font-size: 20px; */
+            font-family: "Poppins", sans-serif;
+            padding: 2px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ"
+                    alt="">
+                <div class="capsule">31:06</div>
+            </div>
+            <div class="text">
+                <h1>Introduction to Backend | Sigma Web Dev Video #2</h1>
+                <p>CodeWithSaurav . 727k views . 2 months ago</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
