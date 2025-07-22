@@ -7,7 +7,7 @@ setTimeout(() => {
 
 setTimeout(() => {
   console.log("I am inside setTimeout 2");
-}, 0000);
+}, 1000);
 
 console.log("The End!");
 
